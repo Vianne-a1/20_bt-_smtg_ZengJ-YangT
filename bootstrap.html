@@ -19,110 +19,97 @@
 </html>
 
 <body style="padding: 20px;">
-  <!-- Navbar Section -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Bootstrap Demo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">abc</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">xyz</a>
-          </li>
-        </ul>
+
+    <!-- Navbar Example -->
+    <h3>Navbar</h3>
+    <p>The Navbar is responsive and collapses into a toggleable button on smaller screens.</p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap Demo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="card bg-light p-4 my-3">
+      <pre><code>&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Bootstrap Demo&lt;/a&gt;
+    &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarNav&quot; aria-controls=&quot;navbarNav&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+      &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav&quot;&gt;
+      &lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+    </div>
+
+    <!-- Grid System Example -->
+    <h3>Responsive Grid System</h3>
+    <p>Bootstrap’s 12-column grid system allows for easy and responsive layouts. Here, three cards are displayed in a grid.</p>
+    <div class="container my-3">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">Grid System</h5>
+              <p class="card-text">Create responsive layouts with a 12-column grid system.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">Reusable Components</h5>
+              <p class="card-text">Pre-built components like buttons, cards, and forms.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">Customizable Themes</h5>
+              <p class="card-text">Quickly customize styles to match branding.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <header class="bg-primary text-white text-center py-5">
-    <h1>Bootstrap</h1>
-    <p class="lead">A powerful front-end framework for faster and easier web development</p>
-  </header>
-
-  <!-- Grid System with Cards -->
-  <div class="container my-5">
-    <h2 class="text-center">Key Features</h2>
-    <div class="row my-4">
-
-      <!-- Responsive Grid Card 1 -->
-      <div class="col-md-4">
-        <div class="card shadow">
-          <div class="card-body">
-            <h5 class="card-title">aaa</h5>
-            <p class="card-text">zzz</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Reusable Components Card 2 -->
-      <div class="col-md-4">
-        <div class="card shadow">
-          <div class="card-body">
-            <h5 class="card-title">aaa</h5>
-            <p class="card-text">button</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Customizable Themes Card 3 -->
-      <div class="col-md-4">
-        <div class="card shadow">
-          <div class="card-body">
-            <h5 class="card-title">Customizable Themes</h5>
-            <p class="card-text">Quickly customize styles to match your branding using CSS variables.</p>
-          </div>
-        </div>
-      </div>
-
+    <div class="card bg-light p-4 my-3">
+      <pre><code>&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+      &lt;div class=&quot;card shadow&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Grid System&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Create responsive layouts.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
     </div>
-  </div>
-
-  <!-- Contact Us Form Section -->
-  <div class="container">
-    <h3>Contact Us</h3>
-    <form>
-      <div class="mb-3">
-        <label for="emailInput" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="messageTextarea" class="form-label">Message</label>
-        <textarea class="form-control" id="messageTextarea" rows="4" placeholder="Enter your message"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
-
-  <!-- Footer Section -->
-  <footer class="bg-dark text-white text-center py-3 mt-5">
-    <p class="mb-0">Made with Bootstrap | <a href="#" class="text-white">Learn More</a></p>
-  </footer>
-
-  <!-- Form Section -->
-  <div class="container">
-    <h3>Contact Us</h3>
-    <form>
-      <div class="mb-3">
-        <label for="emailInput" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="messageTextarea" class="form-label">Message</label>
-        <textarea class="form-control" id="messageTextarea" rows="4" placeholder="Enter your message"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
+    
   <!-- Email Input Example -->
   <h3>Email Input</h3>
   <p>Demonstrating a simple email input field styled with Bootstrap. Notice that you can have a placeholder input there
