@@ -14,25 +14,81 @@
 </html>
 
 <body style="padding: 20px;">
-  Customize:
-  Sass
-  Color
-  Color Modes 
-  Options
-  Compontents
-  Optimize
-  CSS Variable
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap Demo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  Layout:
-  Breakpoints
-  Containers
-Grid
-Columns
-GUtters
-Utilities
-Z-index
-CSS grid
-<br>
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5">
+      <h1>Welcome to Bootstrap</h1>
+      <p class="lead">A powerful front-end framework for faster and easier web development</p>
+    </header>
+
+    <!-- Container with Grid System -->
+    <div class="container my-5">
+      <h2 class="text-center">Key Features</h2>
+      <div class="row my-4">
+        <div class="col-md-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">Responsive Grid System</h5>
+              <p class="card-text">Create responsive layouts easily with the 12-column grid system.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">Reusable Components</h5>
+              <p class="card-text">Includes pre-built components like buttons, cards, and forms.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">Customizable Themes</h5>
+              <p class="card-text">Quickly customize styles to match your branding using CSS variables.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="container">
+      <h3>Contact Us</h3>
+      <form>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="messageTextarea" class="form-label">Message</label>
+          <textarea class="form-control" id="messageTextarea" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
  <!-- Email Input Example -->
  <h3>Email Input</h3>
  <p>Demonstrating a simple email input field styled with Bootstrap. Notice that you can have a placeholder input there until the user types something.</p>
